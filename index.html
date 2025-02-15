@@ -7,6 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- Placeholder div where JavaScript will inject content dynamically -->
+     <div id="root"></div>
 </body>
+<script>
+    // Creating an h1 element dynamically
+    const heading = document.createElement("h1");
+
+    // Setting the text content of the h1 element
+    heading.innerHTML = "Namaste Everyone from JavaScript!";
+
+    // Selecting the root div where the h1 will be added
+    const root = document.getElementById("root");
+
+    // Appending the h1 element to the root div
+    root.appendChild(heading);
+</script>
 </html>
+<!-- react is a JavaScript Libraray -->
